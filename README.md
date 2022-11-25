@@ -1,1 +1,1 @@
-# prepcards
+# prepcards.dev
