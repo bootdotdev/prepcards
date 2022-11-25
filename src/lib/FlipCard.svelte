@@ -31,17 +31,27 @@
 		style="transform: rotateY({degreesRotated}deg)"
 	>
 		<div
-			class="border-blue-500 border-8 shadow-xl bg-blue-700 absolute w-full h-full rounded overflow-hidden p-4 flex flex-col justify-between"
+			class="rounded-xl border-gray-300 bg-pink-900 border-8 shadow-xl absolute w-full h-full flip-card-face  p-4 flex flex-col justify-between"
 		>
 			<h2 class="text-2xl">{card?.title}</h2>
-			<div class="bg-white rounded p-4">
-				<img alt="technology logo" src={card?.squareImageUrl} />
+			<div class="bg-white rounded h-40 w-full flex justify-center items-center">
+				<img alt="technology logo" class="w-1/2" src={card?.imageUrl} />
 			</div>
 		</div>
 		<div
-			class="flip-card-back border-blue-300 border-8 bg-blue-900 absolute w-full h-full rounded overflow-hidden p-4"
+			class="rounded-xl border-gray-300 border-8 bg-cyan-900  flip-card-back flip-card-face absolute w-full h-full overflow-hidden p-4"
 		>
-			<p>{card?.description}</p>
+			<p class="mb-4">{card?.description}</p>
+
+			<a
+				on:click|stopPropagation={() => {}}
+				href={card?.linkToSiteUrl}
+				class="underline text-cyan-500 hover:text-cyan-400 cursor-pointer"
+				target="_blank"
+				rel="noreferrer"
+			>
+				{card?.linkToSiteAnchor}
+			</a>
 		</div>
 	</div>
 </div>
@@ -60,7 +70,7 @@
 		transform-style: preserve-3d;
 	}
 
-	.flip-card-back {
+	.flip-card-face {
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
 	}

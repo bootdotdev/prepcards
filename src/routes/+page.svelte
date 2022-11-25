@@ -28,7 +28,7 @@
 
 	<div>
 		<a
-			class="underline text-blue-500 hover:text-blue-400 cursor-pointer"
+			class="underline text-blue-500 hover:text-blue-300 cursor-pointer"
 			href="https://github.com/wagslane/prepcards"
 			target="_blank"
 			rel="noreferrer"
