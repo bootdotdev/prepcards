@@ -9,6 +9,7 @@
 	};
 
 	let cardStates: CardState[] = [];
+	$: canUndo = cardStates.length > 0;
 
 	let shuffledCards = cards;
 	reset();
@@ -22,10 +23,13 @@
 	}
 
 	function updateCard(newCard: Card, i: number) {
-		cardStates.push({
-			card: newCard,
-			index: i
-		});
+		cardStates = [
+			...cardStates,
+			{
+				card: newCard,
+				index: i
+			}
+		];
 		shuffledCards[i] = newCard;
 	}
 
@@ -34,6 +38,9 @@
 			return;
 		}
 		const lastState = cardStates.pop();
+		// re-assign for reactivity
+		cardStates = cardStates;
+
 		if (!lastState) {
 			return;
 		}
@@ -97,16 +104,18 @@
 	<div class="w-full px-16">
 		<button
 			class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-32"
-			on:click={undoCard}
-		>
-			Undo
-		</button>
-		<button
-			class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-32"
 			on:click={reset}
 		>
-			Reset
+			Shuffle & Reset
 		</button>
+		{#if canUndo}
+			<button
+				class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-32"
+				on:click={undoCard}
+			>
+				Undo
+			</button>
+		{/if}
 	</div>
 
 	<div class="w-full flex justify-center">
