@@ -67,6 +67,90 @@ export const langCards: Card[] = [
         linkToSiteAnchor: "typescriptlang.org",
         tags: [Tag.Backend],
         position: Position.Zero,
+    },
+    {
+        title: "HTML",
+        description: `HyperText Markup Language is a markup language and that is the building block
+        of the Web. It defines the meaning and structure of web content. 
+        Other technologies besides HTML are generally used to describe a web page's
+        appearance/presentation (CSS) or functionality/behavior (JavaScript).
+        `,
+        imageUrl: "/html-logo.png.webp",
+        linkToSiteUrl: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        linkToSiteAnchor: "developer.mozilla.org",
+        tags: [Tag.Backend],
+        position: Position.Zero,
+    },
+    {
+        title: "CSS",
+        description: `Cascading Style Sheets is a stylesheet language used 
+        to describe the presentation of a document. CSS describes how elements should be
+        rendered.
+        `,
+        imageUrl: "/css-logo.png.webp",
+        linkToSiteUrl: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        linkToSiteAnchor: "developer.mozilla.org",
+        tags: [Tag.Backend],
+        position: Position.Zero,
+    },
+    {
+        title: "C#",
+        description: `C# is an object-oriented, and type-safe programming language.
+        It enables developers to build many apps that run in .NET. C# has its roots in the C 
+        family of languages and will be immediately familiar to C++, Java, and JavaScript programmers.
+        `,
+        imageUrl: "/csharp-logo.svg.webp",
+        linkToSiteUrl: "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/",
+        linkToSiteAnchor: "learn.microsoft.com",
+        tags: [Tag.Backend],
+        position: Position.Zero,
+    },
+    {
+        title: "C++",
+        description: `C++ is a compiled, general-purpose programming language. C++ is essentially C with classes.
+        The language has expanded significantly over time, and modern C++ now has object-oriented, generic,
+        and functional features as well.
+        `,
+        imageUrl: "/cplusplus.png.webp",
+        linkToSiteUrl: "https://en.wikipedia.org/wiki/C%2B%2B",
+        linkToSiteAnchor: "wikipedia.org",
+        tags: [Tag.Backend],
+        position: Position.Zero,
+    },
+    {
+        title: "C",
+        description: `C is a general-purpose computer programming language. By design, C's features
+        cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems,
+        device drivers, protocol stacks, though decreasingly for application software. 
+        `,
+        imageUrl: "/clang.png.webp",
+        linkToSiteUrl: "https://en.wikipedia.org/wiki/C_(programming_language)",
+        linkToSiteAnchor: "wikipedia.org",
+        tags: [Tag.Backend],
+        position: Position.Zero,
+    },
+    {
+        title: "PHP",
+        description: `PHP is a popular general-purpose scripting language that is suited to web development.
+        PHP is well known for template-rendering HTML pages. Wordpress runs on PHP.
+        `,
+        imageUrl: "/php-logo.png.webp",
+        linkToSiteUrl: "https://www.php.net/",
+        linkToSiteAnchor: "php.net",
+        tags: [Tag.Backend],
+        position: Position.Zero,
+    },
+    {
+        title: "Haskell",
+        description: `Haskell is a statically-typed, purely functional programming language with type inference and lazy evaluation.
+        Designed for teaching, research and industrial applications, Haskell has pioneered a number of programming language features such as type classes,
+        which enable type-safe operator overloading, and monadic IO.
+        `,
+        imageUrl: "/haskell-logo.png.webp",
+        linkToSiteUrl: "https://www.haskell.org/",
+        linkToSiteAnchor: "haskell.org",
+        tags: [Tag.Backend],
+        position: Position.Zero,
     }
 ];
 

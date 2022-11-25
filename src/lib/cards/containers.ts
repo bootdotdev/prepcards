@@ -13,6 +13,15 @@ export const containerCards: Card[] = [
         position: Position.Zero,
     },
     {
+        title: "Docker Swarm",
+        description: `Docker Swarm is a Kubernetes alternative built by the Docker team. It's a container orchestration system.`,
+        imageUrl: "/docker-swarm-logo.png.webp",
+        linkToSiteUrl: "https://docs.docker.com/engine/swarm/",
+        linkToSiteAnchor: "docker.com",
+        tags: [Tag.Backend],
+        position: Position.Zero,
+    },
+    {
         title: "Docker",
         description: `Docker manages containers, which are lightweight virtual machines.
         It takes away repetitive, mundane configuration tasks and is used throughout the development
