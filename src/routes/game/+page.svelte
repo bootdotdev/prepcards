@@ -3,6 +3,8 @@
 	import type { Card } from '../../lib/assets/cards';
 	import FlipCard from '../../lib/FlipCard.svelte';
 
+	const maxRenderedCards = 10;
+
 	type CardState = {
 		card: Card;
 		index: number;
@@ -13,6 +15,22 @@
 
 	let shuffledCards = cards;
 	reset();
+
+	let indexToRenderStart = 0;
+	let indexToRenderEnd = maxRenderedCards;
+	$: {
+		indexToRenderStart = 0;
+		indexToRenderEnd = maxRenderedCards;
+		for (const card of shuffledCards) {
+			console.log(card?.title);
+			if (card?.position === Position.Three) {
+				indexToRenderStart++;
+				indexToRenderEnd = indexToRenderStart + maxRenderedCards;
+			} else {
+				break;
+			}
+		}
+	}
 
 	function reset() {
 		cardStates = [];
@@ -117,16 +135,16 @@
 			</button>
 		{/if}
 	</div>
-
 	<div class="w-full flex justify-center">
 		{#each shuffledCards as shuffledCard, i}
-			{#if shuffledCard?.position !== Position.Three}
+			{#if i >= indexToRenderStart && i < indexToRenderEnd}
 				<button
 					on:click={() => {
 						next(i);
 					}}
-					class="absolute"
-					style="z-index: {1000 - i}; transform: translateY({i}%)"
+					class="absolute slide-card"
+					style="z-index: {1000 - (i - indexToRenderStart)}; transform: translateY({i -
+						indexToRenderStart}%)"
 				>
 					<FlipCard card={shuffledCard} />
 				</button>
@@ -134,3 +152,11 @@
 		{/each}
 	</div>
 </div>
+
+<style>
+	.slide-card {
+		transition: transform 500ms;
+		transition-property: transform;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+</style>
