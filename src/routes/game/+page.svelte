@@ -8,13 +8,15 @@
 		index: number;
 	};
 
-	const cardStates: CardState[] = [];
+	let cardStates: CardState[] = [];
 
 	let shuffledCards = cards;
-	shuffleCards();
+	reset();
 
-	function shuffleCards() {
-		shuffledCards = shuffledCards.sort(function () {
+	function reset() {
+		cardStates = [];
+		const newCards = JSON.parse(JSON.stringify(cards));
+		shuffledCards = newCards.sort(function () {
 			return Math.random() - 0.5;
 		});
 	}
@@ -94,6 +96,12 @@
 			on:click={undoCard}
 		>
 			Undo
+		</button>
+		<button
+			class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-32"
+			on:click={reset}
+		>
+			Reset
 		</button>
 	</div>
 

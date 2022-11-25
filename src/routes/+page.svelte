@@ -1,4 +1,4 @@
-<div class="flex flex-col p-4 items-center">
+<div class="flex flex-col py-8 px-4 items-center">
 	<h1 class="text-3xl mb-8 font-bold">Welcome to PrepCards.dev</h1>
 
 	<div class="max-w-xl mb-8">
@@ -25,11 +25,11 @@
 	<div>
 		<a
 			class="underline text-blue-500 hover:text-blue-400 cursor-pointer"
-			href="https://github.com/bootdotdev/prepcards"
+			href="https://github.com/wagslane/prepcards"
 			target="_blank"
 			rel="noreferrer"
 		>
-			Contribute/Star on Github
+			Contribute on Github
 		</a>
 	</div>
 </div>
