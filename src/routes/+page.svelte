@@ -1,5 +1,9 @@
+<svelte:head>
+	<title>Programming Interview Flashcards - Prepcards.Dev</title>
+</svelte:head>
+
 <div class="flex flex-col py-8 px-4 items-center">
-	<h1 class="text-3xl mb-8 font-bold">Welcome to PrepCards.dev</h1>
+	<h1 class="text-3xl mb-8 font-bold">PrepCards.dev</h1>
 
 	<div class="max-w-xl mb-8">
 		<p>

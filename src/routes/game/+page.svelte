@@ -89,6 +89,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Flashcard Game - Prepcards.Dev</title>
+</svelte:head>
+
 <div class="flex flex-col min-h-screen items-center py-8">
 	<div class="w-full px-16">
 		<button
