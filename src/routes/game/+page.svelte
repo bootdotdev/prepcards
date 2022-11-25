@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { cards, Position } from '../../lib/assets/cards';
-	import type { Card } from '../../lib/assets/cards';
+	import { cards, Position } from '../../lib/cards';
+	import type { Card } from '../../lib/cards';
 	import FlipCard from '../../lib/FlipCard.svelte';
 
 	const maxRenderedCards = 10;

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { Card } from './assets/cards';
-	import { Position } from './assets/cards';
+	import type { Card } from './cards';
+	import { Position } from './cards';
 	export let card: Card;
 
 	let percentTranslated = 0;
