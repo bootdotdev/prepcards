@@ -23,7 +23,7 @@
 </script>
 
 <div
-	class="flip-card bg-transparent w-72 h-96"
+	class="flip-card bg-transparent w-72 h-96 relative"
 	style="transform: translateX({percentTranslated}px)"
 >
 	<div

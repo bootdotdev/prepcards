@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { cards, Position } from '../../lib/cards';
-	import type { Card } from '../../lib/cards';
-	import FlipCard from '../../lib/FlipCard.svelte';
+	import { cards, Position } from './cards/index';
+	import type { Card } from './cards';
+	import FlipCard from './FlipCard.svelte';
 
 	const maxRenderedCards = 10;
 
@@ -22,7 +22,6 @@
 		indexToRenderStart = 0;
 		indexToRenderEnd = maxRenderedCards;
 		for (const card of shuffledCards) {
-			console.log(card?.title);
 			if (card?.position === Position.Three) {
 				indexToRenderStart++;
 				indexToRenderEnd = indexToRenderStart + maxRenderedCards;
@@ -118,24 +117,24 @@
 	<title>Flashcard Game - Prepcards.Dev</title>
 </svelte:head>
 
-<div class="flex flex-col min-h-screen items-center py-8">
-	<div class="w-full px-16">
+<div class="flex flex-col items-center">
+	<div class="w-full mb-8">
 		<button
-			class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-32"
+			class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
 			on:click={reset}
 		>
 			Shuffle & Reset
 		</button>
 		{#if canUndo}
 			<button
-				class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-32"
+				class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
 				on:click={undoCard}
 			>
 				Undo
 			</button>
 		{/if}
 	</div>
-	<div class="w-full flex justify-center">
+	<div class="w-full flex justify-center h-96">
 		{#each shuffledCards as shuffledCard, i}
 			{#if i >= indexToRenderStart && i < indexToRenderEnd}
 				<button
