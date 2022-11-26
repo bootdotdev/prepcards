@@ -20,24 +20,21 @@
 
 		<div class="text-gray-400">
 			<p class="mb-8">
-				This open-source flash-card game will familiarize you with popular programming technologies.
-				It's common in programming interviews for various technologies to crop up in conversation,
-				and you get bonus points for being able to nod along and follow the conversation without
-				needing to constantly ask "Wait, what's a Kubernetes?"
+				This open-source flash-card game will familiarize you with popular programming technologies
+				to help prepare you for interviews. It's common for different technologies to crop up in
+				conversation, and it helps to be able to nod along without needing to constantly ask "Wait,
+				what's a Kubernetes?"
 			</p>
 
 			<p class="mb-8">
-				If you want to add to the card collection, submit a pull request on the GitHub repo.
+				If you want to contribute to this game, or just add cards to the deck, submit a pull request
+				on the <a
+					class="underline text-blue-500 hover:text-blue-300 cursor-pointer"
+					href="https://github.com/wagslane/prepcards"
+					target="_blank"
+					rel="noreferrer">GitHub repo.</a
+				>
 			</p>
-
-			<a
-				class="underline text-blue-500 hover:text-blue-300 cursor-pointer"
-				href="https://github.com/wagslane/prepcards"
-				target="_blank"
-				rel="noreferrer"
-			>
-				Contribute on Github
-			</a>
 		</div>
 	</div>
 </div>
