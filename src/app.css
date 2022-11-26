@@ -5,3 +5,7 @@
 button {
     text-align: left;
 }
+
+:root {
+    color-scheme: dark;
+}

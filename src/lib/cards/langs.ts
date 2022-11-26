@@ -10,7 +10,7 @@ export const langCards: Card[] = [
         imageUrl: "/golang-logo.png.webp",
         linkToSiteUrl: "https://go.dev/",
         linkToSiteAnchor: "go.dev",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -21,7 +21,7 @@ export const langCards: Card[] = [
         imageUrl: "/python-logo.png.webp",
         linkToSiteUrl: "https://www.python.org/",
         linkToSiteAnchor: "python.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -32,7 +32,7 @@ export const langCards: Card[] = [
         imageUrl: "/javascript-logo.png.webp",
         linkToSiteUrl: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         linkToSiteAnchor: "mozilla.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -43,7 +43,7 @@ export const langCards: Card[] = [
         imageUrl: "/Java-Emblem.jpeg.webp",
         linkToSiteUrl: "https://www.java.com/en/download/help/whatis_java.html",
         linkToSiteAnchor: "java.com",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -54,7 +54,7 @@ export const langCards: Card[] = [
         imageUrl: "/rust-logo-blk.svg.webp",
         linkToSiteUrl: "https://www.rust-lang.org/",
         linkToSiteAnchor: "rust-lang.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -65,7 +65,7 @@ export const langCards: Card[] = [
         imageUrl: "/typescript-logo.webp.webp",
         linkToSiteUrl: "https://www.typescriptlang.org/",
         linkToSiteAnchor: "typescriptlang.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -78,7 +78,7 @@ export const langCards: Card[] = [
         imageUrl: "/html-logo.png.webp",
         linkToSiteUrl: "https://developer.mozilla.org/en-US/docs/Web/HTML",
         linkToSiteAnchor: "developer.mozilla.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -90,7 +90,7 @@ export const langCards: Card[] = [
         imageUrl: "/css-logo.png.webp",
         linkToSiteUrl: "https://developer.mozilla.org/en-US/docs/Web/CSS",
         linkToSiteAnchor: "developer.mozilla.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -102,7 +102,7 @@ export const langCards: Card[] = [
         imageUrl: "/csharp-logo.svg.webp",
         linkToSiteUrl: "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/",
         linkToSiteAnchor: "learn.microsoft.com",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -114,7 +114,7 @@ export const langCards: Card[] = [
         imageUrl: "/cplusplus.png.webp",
         linkToSiteUrl: "https://en.wikipedia.org/wiki/C%2B%2B",
         linkToSiteAnchor: "wikipedia.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -126,7 +126,7 @@ export const langCards: Card[] = [
         imageUrl: "/clang.png.webp",
         linkToSiteUrl: "https://en.wikipedia.org/wiki/C_(programming_language)",
         linkToSiteAnchor: "wikipedia.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -137,7 +137,7 @@ export const langCards: Card[] = [
         imageUrl: "/php-logo.png.webp",
         linkToSiteUrl: "https://www.php.net/",
         linkToSiteAnchor: "php.net",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     },
     {
@@ -149,7 +149,7 @@ export const langCards: Card[] = [
         imageUrl: "/haskell-logo.png.webp",
         linkToSiteUrl: "https://www.haskell.org/",
         linkToSiteAnchor: "haskell.org",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.Languages],
         position: Position.Zero,
     }
 ];

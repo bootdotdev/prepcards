@@ -4,15 +4,25 @@ import { infraCards } from "./infra";
 import { Tag, Position } from "./types";
 import type { Card } from "./types";
 
-export {
-    Tag,
-    Position,
-    Card
-}
-
-export const cards: Card[] = [
+const deckAllCards: Card[] = [
     ...infraCards,
     ...langCards,
     ...containerCards
 ];
 
+const deckBackend: Card[] = deckAllCards.filter((card) => {
+    return card?.tags.includes(Tag.Backend)
+})
+
+const deckDevOps: Card[] = deckAllCards.filter((card) => {
+    return card?.tags.includes(Tag.DevOps)
+})
+
+export {
+    Tag,
+    Position,
+    Card,
+    deckAllCards,
+    deckBackend,
+    deckDevOps
+}

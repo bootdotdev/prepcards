@@ -10,7 +10,7 @@ export const infraCards: Card[] = [
         imageUrl: "/terraform-logo.png.webp",
         linkToSiteUrl: "https://www.terraform.io/",
         linkToSiteAnchor: "terraform.io",
-        tags: [Tag.Backend],
+        tags: [Tag.Backend, Tag.DevOps],
         position: Position.Zero,
     },
     {
@@ -21,7 +21,7 @@ export const infraCards: Card[] = [
         imageUrl: "/ansible-logo.png.webp",
         linkToSiteUrl: "https://www.ansible.com/",
         linkToSiteAnchor: "ansible.com",
-        tags: [Tag.Backend],
+        tags: [Tag.DevOps],
         position: Position.Zero,
     },
 ];

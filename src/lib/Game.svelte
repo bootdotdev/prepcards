@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cards, Position } from './cards/index';
+	import { deckAllCards, deckBackend, deckDevOps, Position } from './cards/index';
 	import type { Card } from './cards';
 	import FlipCard from './FlipCard.svelte';
 
@@ -13,7 +13,15 @@
 	let cardStates: CardState[] = [];
 	$: canUndo = cardStates.length > 0;
 
-	let shuffledCards = cards;
+	const deckOptions = [
+		{ text: `All Cards`, deck: deckAllCards },
+		{ text: `Backend Cards`, deck: deckBackend },
+		{ text: `DevOps Cards`, deck: deckDevOps }
+	];
+
+	let selectedDeckOption = deckOptions[0];
+
+	let shuffledCards = selectedDeckOption.deck;
 	reset();
 
 	let indexToRenderStart = 0;
@@ -32,8 +40,9 @@
 	}
 
 	function reset() {
+		shuffledCards = selectedDeckOption.deck;
 		cardStates = [];
-		const newCards = JSON.parse(JSON.stringify(cards));
+		const newCards = JSON.parse(JSON.stringify(shuffledCards));
 		shuffledCards = newCards.sort(function () {
 			return Math.random() - 0.5;
 		});
@@ -123,7 +132,7 @@
 			class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
 			on:click={reset}
 		>
-			Shuffle & Reset
+			Restart
 		</button>
 		{#if canUndo}
 			<button
@@ -134,7 +143,7 @@
 			</button>
 		{/if}
 	</div>
-	<div class="w-full flex justify-center h-96">
+	<div class="w-full flex justify-center h-96 mb-16">
 		{#each shuffledCards as shuffledCard, i}
 			{#if i >= indexToRenderStart && i < indexToRenderEnd}
 				<button
@@ -150,6 +159,14 @@
 			{/if}
 		{/each}
 	</div>
+
+	<select bind:value={selectedDeckOption} on:change={reset} class="py-2 px-3 rounded bg-indigo-700">
+		{#each deckOptions as deckOption}
+			<option value={deckOption}>
+				{deckOption.text}
+			</option>
+		{/each}
+	</select>
 </div>
 
 <style>
