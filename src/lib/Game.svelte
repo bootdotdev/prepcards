@@ -1,5 +1,12 @@
 <script lang="ts">
-	import { deckAllCards, deckBackend, deckDevOps, Position } from './cards/index';
+	import {
+		deckAllCards,
+		deckBackend,
+		deckDevOps,
+		deckDatabases,
+		deckLanguages,
+		Position
+	} from './cards/index';
 	import type { Card } from './cards';
 	import FlipCard from './FlipCard.svelte';
 
@@ -15,8 +22,10 @@
 
 	const deckOptions = [
 		{ text: `All Cards`, deck: deckAllCards },
-		{ text: `Backend Cards`, deck: deckBackend },
-		{ text: `DevOps Cards`, deck: deckDevOps }
+		{ text: `Backend Deck`, deck: deckBackend },
+		{ text: `DevOps Deck`, deck: deckDevOps },
+		{ text: `Languages Deck`, deck: deckLanguages },
+		{ text: `Databases Deck`, deck: deckDatabases }
 	];
 
 	let selectedDeckOption = deckOptions[0];

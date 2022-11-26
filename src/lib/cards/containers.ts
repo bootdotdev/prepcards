@@ -9,7 +9,7 @@ export const containerCards: Card[] = [
         imageUrl: "/k8s-logo.webp",
         linkToSiteUrl: "https://kubernetes.io/",
         linkToSiteAnchor: "kubernetes.io",
-        tags: [Tag.Backend, Tag.DevOps],
+        tags: [Tag.DevOps],
         position: Position.Zero,
     },
     {
@@ -18,7 +18,7 @@ export const containerCards: Card[] = [
         imageUrl: "/docker-swarm-logo.png.webp",
         linkToSiteUrl: "https://docs.docker.com/engine/swarm/",
         linkToSiteAnchor: "docker.com",
-        tags: [Tag.Backend, Tag.DevOps],
+        tags: [Tag.DevOps],
         position: Position.Zero,
     },
     {
@@ -29,7 +29,7 @@ export const containerCards: Card[] = [
         imageUrl: "/docker-logo.png.webp",
         linkToSiteUrl: "https://www.docker.com/",
         linkToSiteAnchor: "docker.com",
-        tags: [Tag.Backend, Tag.DevOps],
+        tags: [Tag.DevOps],
         position: Position.Zero,
     },
     {
@@ -40,7 +40,7 @@ export const containerCards: Card[] = [
         imageUrl: "/helm-logo.svg.webp",
         linkToSiteUrl: "https://helm.sh/",
         linkToSiteAnchor: "helm.sh",
-        tags: [Tag.Backend, Tag.DevOps],
+        tags: [Tag.DevOps],
         position: Position.Zero,
     },
 ];

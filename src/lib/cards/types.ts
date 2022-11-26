@@ -1,7 +1,8 @@
 export enum Tag {
     Backend,
     DevOps,
-    Languages
+    Languages,
+    Databases
 }
 
 export enum Position {

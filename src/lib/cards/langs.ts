@@ -149,7 +149,7 @@ export const langCards: Card[] = [
         imageUrl: "/haskell-logo.png.webp",
         linkToSiteUrl: "https://www.haskell.org/",
         linkToSiteAnchor: "haskell.org",
-        tags: [Tag.Backend, Tag.Languages],
+        tags: [Tag.Languages],
         position: Position.Zero,
     }
 ];
