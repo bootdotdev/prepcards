@@ -169,7 +169,7 @@
 		{/each}
 	</div>
 
-	<select bind:value={selectedDeckOption} on:change={reset} class="py-2 px-3 rounded bg-indigo-700">
+	<select bind:value={selectedDeckOption} on:change={reset} class="py-2 px-3 rounded bg-cyan-700">
 		{#each deckOptions as deckOption}
 			<option value={deckOption}>
 				{deckOption.text}
