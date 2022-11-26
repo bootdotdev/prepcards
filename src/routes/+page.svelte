@@ -11,7 +11,7 @@
 	/>
 
 	<meta property="og:title" content="Prepcards.dev - Programming Interview Flashcards" />
-	<meta property="og:image" content="https://i.imgur.com/Uh4bODY.png" />
+	<meta property="og:image" content="https://i.imgur.com/tzqeZuc.png" />
 	<meta property="og:url" content="https://prepcards.dev" />
 
 	<meta name="twitter:title" content="Prepcards.dev - Programming Interview Flashcards" />
@@ -20,7 +20,7 @@
 		content="This open-source flash-card game will familiarize you with popular programming technologies to
 	help prepare you for interviews."
 	/>
-	<meta name="twitter:image" content="https://i.imgur.com/Uh4bODY.png" />
+	<meta name="twitter:image" content="https://i.imgur.com/tzqeZuc.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
