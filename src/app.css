@@ -9,3 +9,7 @@ button {
 :root {
     color-scheme: dark;
 }
+
+body {
+    overflow-x: hidden;
+}
