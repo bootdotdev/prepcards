@@ -10,13 +10,7 @@ I had never used TypeScript or Svelte before for an entire project, so I wanted 
 
 I would *love* for you to help make this game better! Feel free to open pull requests. In particular, I'd love to have you add new cards and decks. Here's the quick start guide to contributing to this project.
 
-1. Clone the repo.
-
-```bash
-git clone https://github.com/wagslane/prepcards
-cd prepcards
-```
-
+1. Fork and clone the repo
 2. Use the proper node version. You can use nvm or install the version in `.nvmrc` manually.
 
 ```bash
